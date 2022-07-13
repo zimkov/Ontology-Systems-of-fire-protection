@@ -1,0 +1,1107 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#"
+     xml:base="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection">
+        <dc:creator xml:lang="en">Yulia Nikulina, Zimkov Alexei</dc:creator>
+        <dc:description xml:lang="en">Ontology describes the design of fire protection systems</dc:description>
+        <dc:publisher xml:lang="en">Yulia Nikulina, Zimkov Alexei</dc:publisher>
+        <dc:title xml:lang="en">Systems of fire protection</dc:title>
+        <dc:title xml:lang="ru">Системы противопожарной защиты</dc:title>
+        <rdfs:comment>Отнология Systems of fire protection (Системы противопожарной защиты) описывает проектирование систем противопожарной защиты</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#имеет -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#имеет"/>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#наОсновании -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#наОсновании">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяИсточником"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#состоитИз -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#состоитИз">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПС"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПТ"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ВПВ"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СОУЭ"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяИсточником -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяИсточником">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяПроектомДля -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяПроектомДля">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Объект_защиты"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПС"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПТ"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ВПВ"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СОУЭ"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#МаксимальноеРасстояниеОтИзвещателяДоСтены -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#МаксимальноеРасстояниеОтИзвещателяДоСтены">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАПС"/>
+        <rdfs:comment>п.13 СП 5.13130.2009</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#высотаПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#высотаПомещения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#высотаХраненияПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#высотаХраненияПомещения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#группаПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#группаПомещения">
+        <rdfs:comment>из приложения Б СП 5.13130.2009</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#длинаПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#длинаПомещения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#значениеНормативногоПоказателя -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#значениеНормативногоПоказателя">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыСОУЭ"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#интенсивностьОрошения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#интенсивностьОрошения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАУП"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#категорияПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#категорияПомещения">
+        <rdfs:comment>в соответствии с таблицей 1 СП 12.13130.2009</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#количествоПожарныхИзвещателей -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#количествоПожарныхИзвещателей">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАПС"/>
+        <rdfs:comment>для АПС по СП 5.13130.2009
+зависит от типа извещателя, категории помещения, высоты помещения</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#количествоЭтажей -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#количествоЭтажей">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыСОУЭ"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#максимальноеРасстояниеМеждуИзвещателями -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#максимальноеРасстояниеМеждуИзвещателями">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАПС"/>
+        <rdfs:comment>п.13 СП 5.13130.2009</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#максимальноеРасстояниеМеждуОросителями -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#максимальноеРасстояниеМеждуОросителями">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАУП"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#минимальнаяПлощадьОрошения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#минимальнаяПлощадьОрошения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАУП"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#минимальныйРасходВоды -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#минимальныйРасходВоды">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыВПВ"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#описаниеПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#описаниеПомещения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения"/>
+        <rdfs:comment>название помещения по техническому паспорту объекта</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАПС -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАПС"/>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАУП -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАУП">
+        <rdfs:comment>Для АПТ по п. 5.1.4 СП 5.13130.2009</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыВПВ -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыВПВ">
+        <rdfs:comment>п.4.1.1 СП 10.13130.2009</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыСОУЭ -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыСОУЭ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#площадьПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#площадьПомещения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#площадьХраненияПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#площадьХраненияПомещения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#продолжительностьПодачиВоды -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#продолжительностьПодачиВоды">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАУП"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#расходОТВ -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#расходОТВ">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыАУП"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#расчетнаяТемператураВоздухаПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#расчетнаяТемператураВоздухаПомещения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения">
+        <rdfs:comment>получают от заказчика</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#удельнаяПожарнаяНагрузка -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#удельнаяПожарнаяНагрузка">
+        <rdfs:comment>по формуле (Б.2) СП 12.13130.2009
+для определения категории помещения</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#числоПожарныхСтволов -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#числоПожарныхСтволов">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#параметрыВПВ"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ширинаПомещения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ширинаПомещения">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#технико-экономическиеПоказателиПомещения"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПС -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПС">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Система_противопожарной_защиты"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#имеет"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_пожарного_извещателя"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#наОсновании"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>АПС (система автоматической пожарной сигнализации)
+СП 5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПТ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПТ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Система_противопожарной_защиты"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#наОсновании"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>АПТ (система автоматического пожаротушения)
+СП 5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ВПВ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ВПВ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Система_противопожарной_защиты"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#наОсновании"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#числоПожарныхСтволов"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ВПВ (внутренний противопожарный водопровод)
+СП 10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Вещество -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Вещество">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Горючая_нагрузка -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Горючая_нагрузка">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение"/>
+        <rdfs:comment>Из приложения Б СП 5.13130.2009</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Документ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Документ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Документ"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяИсточником"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяИсточником"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Система_противопожарной_защиты"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Объект_защиты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Объект_защиты">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#состоитИз"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#количествоЭтажей"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Объект_защиты"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#имеет"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#имеет"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#имеет"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_назначения_защищаемого_помещения"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Горючая_нагрузка"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Объект_защиты"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Документ"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#состоитИз"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Система_противопожарной_защиты"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяПроектомДля"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Объект_защиты"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СОУЭ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СОУЭ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Система_противопожарной_защиты"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#имеет"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_СОУЭ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#наОсновании"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>СОУЭ (система оповещения и управления эвакуацией)
+СП 3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Система_противопожарной_защиты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Система_противопожарной_защиты">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#являетсяЧастью"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Проект_пожарной_безопасности"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Способ_оповещения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Способ_оповещения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СОУЭ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_АУП -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_АУП">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПТ"/>
+        <rdfs:comment>Типы автоматической установки пожаротушения по п. 5.1.3 СП 5.13130.2009
+для водяных и пенных ОТВ</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_СОУЭ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_СОУЭ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СОУЭ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_вещества -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_вещества">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Вещество"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_жилых_и_общественных_зданий -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_жилых_и_общественных_зданий">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение"/>
+        <rdfs:comment>Для ВПВ по п. 4.1.1 СП 10.13130.2009</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_назначения_защищаемого_помещения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_назначения_защищаемого_помещения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#имеет"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_пожарного_извещателя"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Из приложения М СП 5.13130.2009</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_огнетушащего_вещества -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_огнетушащего_вещества">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПТ"/>
+        <rdfs:comment>Из СП 5.13130.2009</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_пожарного_извещателя -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_пожарного_извещателя">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#АПС"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_производственных_и_складских_зданий -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_производственных_и_складских_зданий">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Помещение"/>
+        <rdfs:comment>Для ВПВ по п. 4.1.1 СП 10.13130.2009</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#А -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#А">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+        <rdfs:comment>А повышенная взрывопожаро-опасность</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Б -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Б">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+        <rdfs:comment>Б взрывопожаро-опасность</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Белые_ночи -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Белые_ночи">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Объект_защиты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#В1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#В1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+        <rdfs:comment>В1 пожаро-опасность</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#В2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#В2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+        <rdfs:comment>В2 пожаро-опасность</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#В3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#В3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+        <rdfs:comment>В3 пожаро-опасность</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#В4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#В4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+        <rdfs:comment>В4 пожаро-опасность</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Г -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Г">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+        <rdfs:comment>Г умеренная пожаро-опасность</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ГОСТ_12.1.004-91 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ГОСТ_12.1.004-91">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>ГОСТ 12.1.004-91. Пожарная безопасность. Общие требования. Измененная редакция, Изм. № 1.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ГОСТ_12.1.044-89 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ГОСТ_12.1.044-89">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>ГОСТ 12.1.044-89*. Пожаровзрывоопасность веществ и материалов. Номенклатура показателей и методы их определения.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Д -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Д">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Категория_помещения"/>
+        <rdfs:comment>Д пониженная пожаро-опасность</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#НПБ_23-2001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#НПБ_23-2001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>НОРМЫ ПОЖАРНОЙ БЕЗОПАСНОСТИ НПБ 23-2001. Пожарная опасность технологических сред. Номенклатура показателей.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_1.13130.2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_1.13130.2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>Свод правил СП 1.13130.2009. Эвакуационные пути и выходы</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_10.13130.2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_10.13130.2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>Свод правил СП 10.13130.2009 Системы противопожарной защиты. Внутренний противопожарный водопровод. Требования пожарной безопасност</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_12.13130.2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_12.13130.2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>Свод правил СП 12.13130.2009. Определение категорий помещений, зданий и наружных установок по взрывопожарной и пожарной опасности (с изм., утв. приказом МЧС России от 9 декабря 2010 г. № 643).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_3.13130.2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_3.13130.2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>Свод правил СП 3.13130.2009. Система оповещения и управления эвакуацией людей при пожаре. Требования пожарной безопасности</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_4.13130.2013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_4.13130.2013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>Свод правил СП 4.13130.2013. Ограничение распространения пожара на объектах защиты. Требования к объемно-планировочным и конструктивным решениям и пр</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_5.13130.2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#СП_5.13130.2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>Свод правил СП 5.13130.2009 Системы противопожарной защиты. Установки пожарной сигнализации и пожаротушения автоматические. Нормы и правила проектирования</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ТЦ_Новый_век -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#ТЦ_Новый_век">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Объект_защиты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#аэрозоль -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#аэрозоль">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_огнетушащего_вещества"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#вода -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#вода">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_огнетушащего_вещества"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#газ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#газ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_огнетушащего_вещества"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#дренчерная -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#дренчерная">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_АУП"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#дымовой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#дымовой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_пожарного_извещателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#звуковой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#звуковой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Способ_оповещения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#пламени -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#пламени">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_пожарного_извещателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#порошок -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#порошок">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_огнетушащего_вещества"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#раствор_пенообразвателя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#раствор_пенообразвателя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_огнетушащего_вещества"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#речевой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#речевой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Способ_оповещения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#роботизированная -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#роботизированная">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_АУП"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#с_принудительным_пуском -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#с_принудительным_пуском">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_АУП"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#световой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#световой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Способ_оповещения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#спринклерная -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#спринклерная">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_АУП"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#спринклерно-дренчерная -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#спринклерно-дренчерная">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_АУП"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#тепловой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#тепловой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Тип_пожарного_извещателя"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+        <rdfs:comment>Помещения книгохранилищ, библиотек, цирков, хранения сгораемых музейных ценностей, фондохранилищ, музеев и выставок, картинных галерей, концертных и киноконцертных залов, ЭВМ, магазинов, зданий управлений, гостиниц, боль-ниц</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#123-ФЗ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#123-ФЗ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Нормативный_акт"/>
+        <rdfs:comment>Федеральный закон от 22.07.2008 № 123-ФЗ «Технический регламент о требованиях пожарной безопасности» (ред. от 13.07.2015)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+        <rdfs:comment>Удельная пожарная нагрузка 181-1400 МДж/м . Помещения деревообрабаты-вающего, текстильного, трикотажного, текстильно-галантерейного, табачного, обувного, кожевенного, мехового, целлюлозно-бумажного и печатного произ-водств; окрасочных, пропиточных, малярных, смесеприготовительных, обезжи-ривания, консервации и расконсервации, промывки деталей с применением ЛВЖ и ГЖ; производства ваты, искусственных и пленочных материалов; швейной промышленности; производств с применением резинотехнических изделий; предприятий по обслуживанию автомобилей; гаражи и стоянки, помещения категории В3</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+        <rdfs:comment>Помещения для производства резинотехнических изделий</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#4.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#4.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+        <rdfs:comment>Удельная пожарная нагрузка 1401-2200 МДж/м . Помещения для производства горючих натуральных и синтетических волокон, окрасочные и сушильные каме-ры, участки открытой окраски и сушки, краско-, лако-, клееприготовительных производств с применением ЛВЖ и ГЖ, помещения категории В2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#4.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#4.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+        <rdfs:comment>Удельная пожарная нагрузка более 2200 МДж/м . Машинные залы компрессор-ных станций, станций регенерации, гидрирования, экстракции и помещения других производств, перерабатывающих горючие газы, бензин, спирты, эфиры и другие ЛВЖ и ГЖ, помещения категории В1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+        <rdfs:comment>Склады несгораемых материалов в сгораемой упаковке. Склады трудносгорае-мых материалов</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+        <rdfs:comment>Склады твердых сгораемых материалов, в том числе резины, РТИ, каучука, смо-лы</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julia/ontologies/2019/0/systems-of-fire-protection#Группа_помещения"/>
+        <rdfs:comment>Склады лаков, красок, ЛВЖ, ГЖ</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
