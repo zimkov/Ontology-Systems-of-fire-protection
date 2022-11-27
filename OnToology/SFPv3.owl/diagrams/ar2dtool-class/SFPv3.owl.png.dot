@@ -1,0 +1,49 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Горючая_нагрузка" "base:Объект_защиты" "base:Нормативный_акт" "base:Система_противопожарной_защиты" "base:Проект_пожарной_безопасности" "base:Группа_помещения" "base:Помещение" "base:Категория_помещения" "base:Тип_назначения_защищаемого_помещения" "base:Тип_пожарного_извещателя" "base:Тип_СОУЭ" "base:АПС" ; /*classes style*/
+	"NULL" -> "xsd:integer" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Тип_СОУЭ" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Объект_защиты" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:наОсновании" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Тип_назначения_защищаемого_помещения" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:количествоЭтажей" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Нормативный_акт" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Помещение" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Система_противопожарной_защиты" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Проект_пожарной_безопасности" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:имеет" [ label = "owl:onProperty" ];
+	"NULL" -> "base:являетсяПроектомДля" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Горючая_нагрузка" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Группа_помещения" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:являетсяЧастью" [ label = "owl:onProperty" ];
+	"NULL" -> "base:являетсяИсточником" [ label = "owl:onProperty" ];
+	"NULL" -> "base:состоитИз" [ label = "owl:onProperty" ];
+	"NULL" -> "base:числоПожарныхСтволов" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Категория_помещения" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Тип_пожарного_извещателя" [ label = "owl:someValuesFrom" ];
+	"base:интенсивностьОрошения" -> "base:параметрыАУП" [ label = "rdfs:subPropertyOf" ];
+	"base:МаксимальноеРасстояниеОтИзвещателяДоСтены" -> "base:параметрыАПС" [ label = "rdfs:subPropertyOf" ];
+	"base:расходОТВ" -> "base:параметрыАУП" [ label = "rdfs:subPropertyOf" ];
+	"base:длинаПомещения" -> "base:технико-экономическиеПоказателиПомещения" [ label = "rdfs:subPropertyOf" ];
+	"base:площадьПомещения" -> "base:технико-экономическиеПоказателиПомещения" [ label = "rdfs:subPropertyOf" ];
+	"base:значениеНормативногоПоказателя" -> "base:параметрыСОУЭ" [ label = "rdfs:subPropertyOf" ];
+	"base:высотаПомещения" -> "base:технико-экономическиеПоказателиПомещения" [ label = "rdfs:subPropertyOf" ];
+	"base:продолжительностьПодачиВоды" -> "base:параметрыАУП" [ label = "rdfs:subPropertyOf" ];
+	"base:расчетнаяТемператураВоздухаПомещения" -> "base:технико-экономическиеПоказателиПомещения" [ label = "rdfs:subPropertyOf" ];
+	"base:высотаХраненияПомещения" -> "base:технико-экономическиеПоказателиПомещения" [ label = "rdfs:subPropertyOf" ];
+	"base:количествоПожарныхИзвещателей" -> "base:параметрыАПС" [ label = "rdfs:subPropertyOf" ];
+	"base:количествоЭтажей" -> "base:параметрыСОУЭ" [ label = "rdfs:subPropertyOf" ];
+	"base:описаниеПомещения" -> "base:технико-экономическиеПоказателиПомещения" [ label = "rdfs:subPropertyOf" ];
+	"base:максимальноеРасстояниеМеждуОросителями" -> "base:параметрыАУП" [ label = "rdfs:subPropertyOf" ];
+	"base:числоПожарныхСтволов" -> "base:параметрыВПВ" [ label = "rdfs:subPropertyOf" ];
+	"base:максимальноеРасстояниеМеждуИзвещателями" -> "base:параметрыАПС" [ label = "rdfs:subPropertyOf" ];
+	"base:минимальныйРасходВоды" -> "base:параметрыВПВ" [ label = "rdfs:subPropertyOf" ];
+	"base:площадьХраненияПомещения" -> "base:технико-экономическиеПоказателиПомещения" [ label = "rdfs:subPropertyOf" ];
+	"base:минимальнаяПлощадьОрошения" -> "base:параметрыАУП" [ label = "rdfs:subPropertyOf" ];
+	"base:ширинаПомещения" -> "base:технико-экономическиеПоказателиПомещения" [ label = "rdfs:subPropertyOf" ];
+	"base:Проект_пожарной_безопасности" -> "base:Объект_защиты" [ label = "base:являетсяПроектомДля" ];
+	"base:АПС" -> "base:Проект_пожарной_безопасности" [ label = "base:являетсяЧастью" ];
+	"base:Проект_пожарной_безопасности" -> "base:АПС" [ label = "base:состоитИз" ];
+
+}
