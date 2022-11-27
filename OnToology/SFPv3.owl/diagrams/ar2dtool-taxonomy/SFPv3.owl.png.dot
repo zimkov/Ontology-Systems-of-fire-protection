@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Горючая_нагрузка" "base:Объект_защиты" "base:Нормативный_акт" "base:Вещество" "base:СОУЭ" "base:Тип_вещества" "base:Способ_оповещения" "base:Система_противопожарной_защиты" "base:ВПВ" "base:Проект_пожарной_безопасности" "base:Группа_помещения" "base:Тип_производственных_и_складских_зданий" "base:Помещение" "base:Категория_помещения" "base:Тип_назначения_защищаемого_помещения" "base:Тип_пожарного_извещателя" "base:Тип_огнетушащего_вещества" "base:Тип_жилых_и_общественных_зданий" "base:Тип_СОУЭ" "base:Тип_АУП" "base:АПС" "base:Документ" "base:АПТ" ; /*classes style*/
+	"base:Тип_пожарного_извещателя" -> "base:АПС" [ label = "rdfs:subClassOf" ];
+	"base:Тип_производственных_и_складских_зданий" -> "base:Помещение" [ label = "rdfs:subClassOf" ];
+	"base:Группа_помещения" -> "base:Помещение" [ label = "rdfs:subClassOf" ];
+	"base:Горючая_нагрузка" -> "base:Помещение" [ label = "rdfs:subClassOf" ];
+	"base:Вещество" -> "base:Помещение" [ label = "rdfs:subClassOf" ];
+	"base:АПТ" -> "base:Система_противопожарной_защиты" [ label = "rdfs:subClassOf" ];
+	"base:Тип_назначения_защищаемого_помещения" -> "base:Помещение" [ label = "rdfs:subClassOf" ];
+	"base:Система_противопожарной_защиты" -> "base:Проект_пожарной_безопасности" [ label = "rdfs:subClassOf" ];
+	"base:СОУЭ" -> "base:Система_противопожарной_защиты" [ label = "rdfs:subClassOf" ];
+	"base:Тип_АУП" -> "base:АПТ" [ label = "rdfs:subClassOf" ];
+	"base:Объект_защиты" -> "base:Проект_пожарной_безопасности" [ label = "rdfs:subClassOf" ];
+	"base:АПС" -> "base:Система_противопожарной_защиты" [ label = "rdfs:subClassOf" ];
+	"base:Тип_СОУЭ" -> "base:СОУЭ" [ label = "rdfs:subClassOf" ];
+	"base:Тип_жилых_и_общественных_зданий" -> "base:Помещение" [ label = "rdfs:subClassOf" ];
+	"base:Категория_помещения" -> "base:Помещение" [ label = "rdfs:subClassOf" ];
+	"base:ВПВ" -> "base:Система_противопожарной_защиты" [ label = "rdfs:subClassOf" ];
+	"base:Нормативный_акт" -> "base:Документ" [ label = "rdfs:subClassOf" ];
+	"base:Тип_огнетушащего_вещества" -> "base:АПТ" [ label = "rdfs:subClassOf" ];
+	"base:Тип_вещества" -> "base:Вещество" [ label = "rdfs:subClassOf" ];
+	"base:Помещение" -> "base:Объект_защиты" [ label = "rdfs:subClassOf" ];
+	"base:Способ_оповещения" -> "base:СОУЭ" [ label = "rdfs:subClassOf" ];
+	"base:Проект_пожарной_безопасности" -> "base:Документ" [ label = "rdfs:subClassOf" ];
+
+}
